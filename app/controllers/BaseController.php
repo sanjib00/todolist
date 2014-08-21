@@ -1,12 +1,9 @@
 <?php
 
-class BaseController extends Controller {
 
-	/**
-	 * Setup the layout used by the controller.
-	 *
-	 * @return void
-	 */
+class BaseController extends Controller {
+    protected $layout = 'layouts.main';
+
 	protected function setupLayout()
 	{
 		if ( ! is_null($this->layout))
